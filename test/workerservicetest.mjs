@@ -24,9 +24,15 @@ import SimpleJS      from "./services/simplejs.mjs";
     result = await srv.twoParam(true, '$');
     console.log("service:", result);
 
+    srv.onchange = (evt) => {
+        console.log(evt);
+    };
+
+/*
     srv.subscribe('change', (evt) => {
         console.log(evt);
     });
+*/
 
     let a = await srv.a;
     console.log("service a:", a);
