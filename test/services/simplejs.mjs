@@ -37,12 +37,12 @@ export default class SimpleJS extends Base {
     }
 
     twoParam(b,c) {
-        console.log(">> SimpleSJ.twoParam", a);
+        console.log(">> SimpleSJ.twoParam", b, c);
         return `twoParam ${b}, ${c}`;
     }
 
     argsParam(...args) {
-        console.log(">> SimpleSJ.argsParam", a);
+        console.log(">> SimpleSJ.argsParam", args);
         return `argsParam ${args}`;
     }
 
