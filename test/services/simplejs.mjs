@@ -41,9 +41,10 @@ export default class SimpleJS extends Base {
         return `twoParam ${b}, ${c}`;
     }
 
-    argsParam(...args) {
-        console.log(">> SimpleSJ.argsParam", args);
-        return `argsParam ${args}`;
+    /*async*/ forceTimeout() {
+        return new Promise(resolve => {
+            setTimeout(resolve, 1000000);
+        });
     }
 
 }
