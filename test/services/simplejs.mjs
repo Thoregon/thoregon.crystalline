@@ -43,7 +43,7 @@ export default class SimpleJS extends Base {
 
     /*async*/ forceTimeout() {
         return new Promise(resolve => {
-            setTimeout(resolve, 1000000);
+            setTimeout(resolve, 10000);
         });
     }
 

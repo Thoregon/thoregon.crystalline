@@ -12,6 +12,9 @@ import ServiceFacade from "../lib/servicefacade.mjs";
 import JSProvider    from "../lib/providers/jsprovider.mjs";
 import SimpleJS      from "./services/simplejs.mjs";
 
+import ConsoleLogger from "../lib/consolelogger.mjs";
+thoregon.archetimlogger = new ConsoleLogger();
+
 (async () => {
     try {
         const srv = await ServiceFacade.use(await JSProvider.with(new SimpleJS()));
