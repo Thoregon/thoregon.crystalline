@@ -8,8 +8,8 @@
 
 import * as util from "/evolux.util";
 
-import ServiceFacade from "../lib/servicefacade.mjs";
-import JSProvider    from "../lib/providers/jsprovider.mjs";
+import Facade     from "../lib/facade.mjs";
+import JSProvider from "../lib/providers/jsprovider.mjs";
 import SimpleJS      from "./services/simplejs.mjs";
 
 import ConsoleLogger from "../lib/consolelogger.mjs";
@@ -17,7 +17,7 @@ thoregon.archetimlogger = new ConsoleLogger();
 
 (async () => {
     try {
-        const srv = await ServiceFacade.use(await JSProvider.with(new SimpleJS()));
+        const srv = await Facade.use(await JSProvider.with(new SimpleJS()));
 
         let result = await srv.doit();
         console.log("service:", result);
