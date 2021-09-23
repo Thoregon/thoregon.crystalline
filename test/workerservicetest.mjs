@@ -42,6 +42,12 @@ thoregon.archetimlogger = new ConsoleLogger();
         console.log("service a:", a);
         let b = await srv.b;
         console.log("1 service b:", b);
+
+        let x = await srv.x;
+        console.log("service x:", x);
+        let y = await srv.y;
+        console.log("service y:", y);
+
         srv.b = 'X';
         b     = await srv.b;
         console.log("2 service b:", b);

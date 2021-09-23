@@ -12,6 +12,10 @@ class Base {
         this.b = 'B';
     }
 
+    get x() {
+        return 'X';
+    }
+
     baseDoIt() {
         console.log(">> Base.baseDoIt");
         return "done Base";
@@ -24,6 +28,10 @@ export default class SimpleJS extends Base {
         super(props);
         this.c = 'C';
         this.d = 'D';
+    }
+
+    get y() {
+        return 'Y';
     }
 
     doit() {
