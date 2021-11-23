@@ -52,7 +52,7 @@ Provider Base Classes
         WorkerProvider
             - loads a worker
             - communicates with worker, query API      
-        ThoregonProvider
+        ThoregonConsumer
             - connects to a thoregon message queue
             - the service impl is typically located on another node
         RESTProvider
