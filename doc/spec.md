@@ -8,3 +8,9 @@ Service Facades
     - OpenAPI (Swagger)
     - from JS class/object
 - generic invokation
+
+
+
+
+@see also: https://github.com/trpc/trpc
+
