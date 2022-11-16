@@ -5,7 +5,7 @@ Service Facades
 - providers implement API invokations
 - API generation
     - schema
-    - OpenAPI (Swagger)
+    - OpenAPI (Swagger), AsyncAPI 
     - from JS class/object
 - generic invokation
 
