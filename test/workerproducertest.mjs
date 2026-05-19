@@ -6,8 +6,6 @@
  * @see: {@link https://github.com/Thoregon}
  */
 
-import * as util from "/evolux.util";
-
 import Facade     from "../lib/facade.mjs";
 import JSConsumer from "../lib/consumers/jsconsumer.mjs";
 import SimpleJS   from "./services/simplejs.mjs";
